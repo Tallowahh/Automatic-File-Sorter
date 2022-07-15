@@ -8,13 +8,15 @@ import java.util.Scanner;
 //Create new directories based on user's Key word selections and arrange files into those groups
 
 public class PrintFileNames {
+	
+	static final int file_limit = 50000;
 
 	public static int counter = 0;
 	public static int counter_2 = 0;
 	
 	public static Scanner userinput = new Scanner(System.in);	
 	
-	public static File[] temp_files = new java.io.File[50000];
+	public static File[] temp_files = new java.io.File[file_limit];
 
 
 	public static File[] searchDirectory(String dir_name) { // Function to search directory
